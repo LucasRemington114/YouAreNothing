@@ -62,8 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BattleManager.cs" />
-    <Compile Include="Assets\Scripts\DrawTarot.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\DrawTarot.cs" />
+    <Compile Include="Assets\Scripts\Battle\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Battle\Player.cs" />
+    <Compile Include="Assets\Scripts\GenericAnimationEvent.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -601,6 +604,12 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -616,38 +625,32 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.quicksearch">
       <HintPath>C:/Users/Plush Von Plush/Documents/GitHub/YouAreNothing/YouAreNothing/Library/ScriptAssemblies/com.unity.quicksearch.dll</HintPath>
