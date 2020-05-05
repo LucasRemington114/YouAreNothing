@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    private Vector3 originalPosition;
+
     public int initiativeNumber;
     public Image playerSprite;
     public Text nameText;
@@ -16,16 +18,12 @@ public class Player : MonoBehaviour
     public int resourceType; //0 for mana, 1 for stamina, 2 for rage
     public int playerResource;
     public string playerTarotCard;
+    public bool isTurn; //true when it is this players turn, and they can act
+    public bool turnOver; //true when the player has already acting, but it is not currently their turn.
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetPositionToZeroLocation()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        originalPosition = gameObject.transform.localPosition;
+        gameObject.transform.localPosition = new Vector3(-230, -72, 0);
     }
 }

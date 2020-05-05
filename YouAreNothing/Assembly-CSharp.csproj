@@ -66,7 +66,9 @@
     <Compile Include="Assets\Scripts\Battle\DrawTarot.cs" />
     <Compile Include="Assets\Scripts\Battle\Enemy.cs" />
     <Compile Include="Assets\Scripts\Battle\Player.cs" />
+    <Compile Include="Assets\Scripts\DisappearWhenPrompted.cs" />
     <Compile Include="Assets\Scripts\GenericAnimationEvent.cs" />
+    <Compile Include="Assets\Scripts\NoImageWhenNone.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

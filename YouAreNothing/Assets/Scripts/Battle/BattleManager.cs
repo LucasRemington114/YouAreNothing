@@ -29,8 +29,15 @@ public class BattleManager : MonoBehaviour
     //Bools
     public bool initativePhaseOver;
 
+    //Ints
+    public int currentTurn; //The current turn number. 
+
     public int activeUI; //The type of UI currently active. 
     public int roundNumber; //equal to the number of rounds.
+
+    //Player UI
+    public Image[] playerBackgroundImage;
+    public Animator[] playerBackgroundImageAnim;
 
     //Other scripts
     public DrawTarot dt;
@@ -45,6 +52,11 @@ public class BattleManager : MonoBehaviour
             playerTarotIcon[i] = playerTarotCard[i].GetComponentsInChildren<Image>()[1];
             playerTarotAnim[i] = playerTarotCard[i].GetComponent<Animator>();
             playerTarotText[i] = playerTarotCard[i].GetComponentInChildren<Text>();
+        }
+        for (int i = 0; i < player.Length; i++)
+        {
+            playerBackgroundImage[i] = player[i].GetComponentInChildren<Image>();
+            playerBackgroundImageAnim[i] = playerBackgroundImage[i].GetComponent<Animator>();
         }
         playerDoneButtonIMG = playerDoneButton.GetComponentInChildren<Image>();
         playerDoneButtonAnim = playerDoneButton.GetComponentInChildren<Animator>();
@@ -249,14 +261,64 @@ public class BattleManager : MonoBehaviour
         for (int i = 0; i < player.Length; i++)
         {
             playerTarotAnim[i].SetTrigger("Vanish");
+            playerBackgroundImageAnim[i].SetTrigger("Vanish");
             player[i].playerTarotCard = playerTarotText[i].text;
             player[i].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[i].playerTarotCard)];
             player[i].initiativeIMG.enabled = true;
             player[i].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[i].playerTarotCard);
             player[i].initiativeNumber = dt.ReturnIdentityIntOfTarotCardByString(player[i].playerTarotCard);
-            initativePhaseOver = true;
         }
-
+        initativePhaseOver = true;
+        currentTurn = 79;
+        DetermineTurn();
     }
 
+    //This probably isn't a great way to do this BUT basically, every living enemy and player has a turn number under 78. 
+    //This function cycles through the turn numbers, counting down from 78. If that number matches the iniative number of the player or enemy, it calls the appropriate turn-taking function.
+    //Right now this function (and everything else) only cares about players. Enemies 
+    public void DetermineTurn ()
+    {
+        currentTurn--;
+        for (int i = 0; i < player.Length; i++)
+        {
+            if (currentTurn == player[i].initiativeNumber)
+            {
+                player[i].isTurn = true;
+            }
+        }
+
+        if (player[0].isTurn == true)
+        {
+            StartCoroutine(TakePlayerTurn(0));
+        }
+        else if (player[1].isTurn == true)
+        {
+            StartCoroutine(TakePlayerTurn(1));
+        }
+        else if (player[2].isTurn == true)
+        {
+            StartCoroutine(TakePlayerTurn(2));
+        }
+        else if (player[3].isTurn == true)
+        {
+            StartCoroutine(TakePlayerTurn(3));
+        }
+        else
+        {
+            DetermineTurn();
+        }
+    }
+
+    //When this function is called, take the turn of the indicated player. 
+    public IEnumerator TakePlayerTurn(int playerNumber)
+    {
+        Debug.Log(currentTurn + " Player turn " + playerNumber);
+        yield return new WaitUntil(() => playerBackgroundImage[playerNumber].enabled == false);
+        player[playerNumber].SetPositionToZeroLocation();
+        playerBackgroundImageAnim[playerNumber].SetTrigger("Vanish");
+        playerBackgroundImage[playerNumber].enabled = true;
+        player[playerNumber].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[playerNumber].playerTarotCard)];
+        player[playerNumber].initiativeIMG.enabled = true;
+        player[playerNumber].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[playerNumber].playerTarotCard);
+    }
 }
