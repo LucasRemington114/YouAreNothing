@@ -269,7 +269,7 @@ public class BattleManager : MonoBehaviour
             player[i].initiativeNumber = dt.ReturnIdentityIntOfTarotCardByString(player[i].playerTarotCard);
         }
         initativePhaseOver = true;
-        currentTurn = 79;
+        currentTurn = 78;
         DetermineTurn();
     }
 

@@ -7,19 +7,56 @@ public class Player : MonoBehaviour
 {
     private Vector3 originalPosition;
 
-    public int initiativeNumber;
+    public SerializeablePlayerData playerData; //The scriptable object containing the necessary player data. 
+
+    //Data related to turns and initiative
+    public int initiativeNumber; //From 0 to 77: the higher the number, the sooner the player takes their turn. 
+    public bool isTurn; //true when it is this players turn, and they can act
+    public bool turnOver; //true when the player has already acting, but it is not currently their turn.
+
+    //Images, animators, and other visual objects.
+    public Animator playerAnim;
     public Image playerSprite;
     public Text nameText;
     public Image initiativeIMG;
     public Text initiativeText;
     public Image[] conditionIMG = new Image[6];
     public Image[] buffIMG = new Image[6];
+
     public int playerHealth;
+    public int currentHealth;
+    public int maxHealth;
     public int resourceType; //0 for mana, 1 for stamina, 2 for rage
-    public int playerResource;
-    public string playerTarotCard;
-    public bool isTurn; //true when it is this players turn, and they can act
-    public bool turnOver; //true when the player has already acting, but it is not currently their turn.
+    public int playerResource; //The amount of resources the player has. 
+    public int currentResource;
+    public int maxResource;
+
+    public string playerTarotCard; //Which tarot card the player has: determines what abilities they have available. 
+
+
+    void Awake()
+    {
+        playerSprite.sprite = playerData.playerSprite;
+        nameText.text = playerData.playerName;
+        playerHealth = playerData.startingHealth;
+        currentHealth = playerHealth; //in the future this will need to be pulled from the appropriate manager
+        maxHealth = playerHealth;
+        resourceType = playerData.resourceType;
+        currentResource = playerResource;
+        maxResource = playerResource;
+        playerResource = playerData.startingResource;
+        playerAnim = GetComponentsInChildren<Animator>()[1];
+        if (playerData.playerAnimator != null)
+        {
+            playerAnim.runtimeAnimatorController = playerData.playerAnimator;
+        }
+        else
+        {
+            Debug.Log("Fool animator");
+            playerAnim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("PlayerAnimations/Fool/TheFool");
+        }
+    }
+
 
     public void SetPositionToZeroLocation()
     {
