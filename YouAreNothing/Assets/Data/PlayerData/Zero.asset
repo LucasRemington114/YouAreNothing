@@ -19,3 +19,22 @@ MonoBehaviour:
   startingHealth: 100
   resourceType: 0
   startingResource: 100
+  Wand1: Juxtapose
+  Wand2: Exposit
+  Wand3: Motif
+  Wand4: Satirize
+  Coin1: Foreshadow
+  Coin2: Death Flag
+  Coin3: Allude
+  Coin4: Paradox
+  Cup1: Plot Armor
+  Cup2: Hyperbolize
+  Cup3: Symbolize
+  Cup4: Dictate
+  Sword1: Flashback
+  Sword2: Dramatize
+  Sword3: Euphemize
+  Sword4: Deus Ex Mach
+  Ultimate1: Soliloquy
+  Ultimate2: Synecdoche
+  Ultimate3: Rewrite

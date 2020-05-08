@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MoveSelect
+  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6c29e8bdd36147e4d9e27e97855318d7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 13179572629b1894fb26f62ed2242675, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fdd23194d9615134a83a12686e657853, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2b1d3ce1153e7764688d384e593f701d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6e7cd8d1f6cf6224d840de12922219cc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e48f5862d35079e45ad60d8e6b2b777c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9872e5118e2ef0e4991fbae11ee6796c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 551381ec5ae3b594f86c982cbf7c5213, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 792de8a736d640f4195cdd28dd23d6ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d5e66fc2078cd7b4aaf4e2d08c22ae67, type: 2}

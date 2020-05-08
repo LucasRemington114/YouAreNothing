@@ -466,6 +466,7 @@ MonoBehaviour:
   currentResource: 0
   maxResource: 0
   playerTarotCard: 
+  tarotCardType: 0
 --- !u!1 &70849938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1124,7 @@ Animator:
   m_GameObject: {fileID: 179904230}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1346,7 +1347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &186338422
 Transform:
   m_ObjectHideFlags: 0
@@ -1858,7 +1859,7 @@ Animator:
   m_GameObject: {fileID: 271254970}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2209,7 +2210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &371387852
 Transform:
   m_ObjectHideFlags: 0
@@ -2269,6 +2270,7 @@ MonoBehaviour:
   currentResource: 0
   maxResource: 0
   playerTarotCard: 
+  tarotCardType: 0
 --- !u!1 &377838790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2661,7 @@ Animator:
   m_GameObject: {fileID: 395582974}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3412,7 +3414,7 @@ Animator:
   m_GameObject: {fileID: 486773489}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3474,7 +3476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &490977740
 Transform:
   m_ObjectHideFlags: 0
@@ -4540,7 +4542,7 @@ Animator:
   m_GameObject: {fileID: 598360900}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4680,7 +4682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &604780049
 Transform:
   m_ObjectHideFlags: 0
@@ -4764,7 +4766,7 @@ Animator:
   m_GameObject: {fileID: 606441285}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6989a4c8339768f48ab4d9d8040cc948, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6232,7 +6234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &827921936
 Transform:
   m_ObjectHideFlags: 0
@@ -6729,7 +6731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &928927011
 Transform:
   m_ObjectHideFlags: 0
@@ -6760,7 +6762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &948502406
 Transform:
   m_ObjectHideFlags: 0
@@ -6791,7 +6793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &957181903
 Transform:
   m_ObjectHideFlags: 0
@@ -7239,7 +7241,7 @@ Animator:
   m_GameObject: {fileID: 1029506868}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9407,8 +9409,21 @@ MonoBehaviour:
   selectedTarotCard: 0
   selectedTarotCardIsMoveable: 0
   doneButtonSelected: 0
+  moveSelect1:
+  - {fileID: 948502405}
+  - {fileID: 928927010}
+  - {fileID: 604780048}
+  moveSelect2:
+  - {fileID: 186338421}
+  - {fileID: 490977739}
+  - {fileID: 827921935}
+  - {fileID: 1740949570}
+  moveDescription: {fileID: 957181902}
+  selectedMoveButtonRow: 0
+  selectedMoveButtonColumn: 0
   initativePhaseOver: 0
   currentTurn: 0
+  playerTakingTurn: 0
   activeUI: 0
   roundNumber: 0
   playerBackgroundImage:
@@ -9746,6 +9761,7 @@ MonoBehaviour:
   currentResource: 0
   maxResource: 0
   playerTarotCard: 
+  tarotCardType: 0
 --- !u!1 &1469035014
 GameObject:
   m_ObjectHideFlags: 0
@@ -11223,7 +11239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1740949571
 Transform:
   m_ObjectHideFlags: 0
@@ -11321,7 +11337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1808532605
 Transform:
   m_ObjectHideFlags: 0
@@ -11381,6 +11397,7 @@ MonoBehaviour:
   currentResource: 0
   maxResource: 0
   playerTarotCard: 
+  tarotCardType: 0
 --- !u!1 &1838759568
 GameObject:
   m_ObjectHideFlags: 0
@@ -11620,7 +11637,7 @@ Animator:
   m_GameObject: {fileID: 1949165707}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11735,7 +11752,7 @@ Animator:
   m_GameObject: {fileID: 2003650641}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c8742647fdc29441b7784af4798efd2, type: 2}
+  m_Controller: {fileID: 22100000, guid: cb9bf4cceff4376449daed0b89741a04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

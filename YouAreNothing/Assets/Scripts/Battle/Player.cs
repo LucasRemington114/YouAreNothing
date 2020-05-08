@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     public int maxResource;
 
     public string playerTarotCard; //Which tarot card the player has: determines what abilities they have available. 
-
+    public int tarotCardType; //0 = Wand, 1 = Coin, 2 = Cup, 3 = Sword, 4 = Major Arcana
 
     void Awake()
     {
@@ -57,10 +57,43 @@ public class Player : MonoBehaviour
         }
     }
 
+    //Called by BattleManager when the player begins their turn. 
+    public void BeginTurn ()
+    {
+        SetPositionToZeroLocation();
+        tarotCardType = DetermineTarotCardType();
+    }
 
+    //Sets position to Zero Location, and records the original position.
     public void SetPositionToZeroLocation()
     {
         originalPosition = gameObject.transform.localPosition;
         gameObject.transform.localPosition = new Vector3(-230, -72, 0);
+    }
+
+
+    //Determines the type of tarot card. 
+    public int DetermineTarotCardType ()
+    {
+        if (playerTarotCard.Contains("Wand"))
+        {
+            return 0;
+        }
+        else if (playerTarotCard.Contains("Coin"))
+        {
+            return 1;
+        }
+        else if (playerTarotCard.Contains("Cup"))
+        {
+            return 2;
+        }
+        else if (playerTarotCard.Contains("Sword"))
+        {
+            return 3;
+        }
+        else
+        {
+            return 4;
+        }
     }
 }

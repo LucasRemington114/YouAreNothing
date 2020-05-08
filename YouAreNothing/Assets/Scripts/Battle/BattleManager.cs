@@ -18,9 +18,26 @@ public class BattleManager : MonoBehaviour
     Image playerDoneButtonIMG;
     Animator playerDoneButtonAnim;
     Text playerDoneButtonText;
+
+    //Tarot variables
     public int selectedTarotCard; //The tarot card currently selected.
     public bool selectedTarotCardIsMoveable; //True if the selected tarot card is in the moveable state.
     public bool doneButtonSelected; //True if the done button is selected.
+
+    //Move Select UI elements
+    public GameObject[] moveSelect1 = new GameObject[3];
+    public GameObject[] moveSelect2 = new GameObject[4];
+    public GameObject moveDescription;
+    Text[] moveSelectText1 = new Text[3];
+    Text[] moveSelectText2 = new Text[4];
+    Animator[] moveSelectAnim1 = new Animator[3];
+    Animator[] moveSelectAnim2 = new Animator[4];
+    Image[] moveSelectIMG2 = new Image[4];
+
+    //Move Select variables
+    public int selectedMoveButtonRow; //The row of the move button currently selected.
+    public int selectedMoveButtonColumn; //The column of the move button currently selected.
+    public int moveTypeSelected; // 0 for basic, 1 for special, 2 for run.
 
     //Temporary stoage variables for moving cards
     string oldTarotCardString;
@@ -31,7 +48,7 @@ public class BattleManager : MonoBehaviour
 
     //Ints
     public int currentTurn; //The current turn number. 
-
+    public int playerTakingTurn; //Which player is currently taking a turn.
     public int activeUI; //The type of UI currently active. 
     public int roundNumber; //equal to the number of rounds.
 
@@ -78,6 +95,20 @@ public class BattleManager : MonoBehaviour
                 playerTarotAnim[i].SetTrigger("Vanish");
             }
         }
+        for (int i = 0; i < moveSelect1.Length; i++)
+        {
+            moveSelect1[i].SetActive(false);
+            moveSelectText1[i] = moveSelect1[i].GetComponentInChildren<Text>();
+            moveSelectAnim1[i] = moveSelect1[i].GetComponentInChildren<Animator>();
+        }
+        for (int i = 0; i < moveSelect2.Length; i++)
+        {
+            moveSelect2[i].SetActive(false);
+            moveSelectText2[i] = moveSelect2[i].GetComponentInChildren<Text>();
+            moveSelectAnim2[i] = moveSelect2[i].GetComponentInChildren<Animator>();
+            moveSelectIMG2[i] = moveSelect2[i].GetComponentInChildren<Image>();
+        }
+        moveDescription.SetActive(false);
         roundNumber++;
         initativePhaseOver = false;
         if (testEnemyText.Length + 4 > dt.cardsRemainingInDeck)
@@ -313,12 +344,243 @@ public class BattleManager : MonoBehaviour
     public IEnumerator TakePlayerTurn(int playerNumber)
     {
         Debug.Log(currentTurn + " Player turn " + playerNumber);
-        yield return new WaitUntil(() => playerBackgroundImage[playerNumber].enabled == false);
-        player[playerNumber].SetPositionToZeroLocation();
-        playerBackgroundImageAnim[playerNumber].SetTrigger("Vanish");
-        playerBackgroundImage[playerNumber].enabled = true;
-        player[playerNumber].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[playerNumber].playerTarotCard)];
-        player[playerNumber].initiativeIMG.enabled = true;
-        player[playerNumber].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[playerNumber].playerTarotCard);
+        playerTakingTurn = playerNumber;
+        yield return new WaitUntil(() => playerBackgroundImage[playerTakingTurn].enabled == false);
+        player[playerTakingTurn].BeginTurn();
+        playerBackgroundImageAnim[playerTakingTurn].SetTrigger("Vanish");
+        playerBackgroundImage[playerTakingTurn].enabled = true;
+        player[playerTakingTurn].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[playerTakingTurn].playerTarotCard)];
+        player[playerTakingTurn].initiativeIMG.enabled = true;
+        player[playerTakingTurn].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[playerTakingTurn].playerTarotCard);
+        for (int i = 0; i < moveSelect1.Length; i++)
+        {
+            moveSelect1[i].SetActive(true);
+            moveSelectText1[i].enabled = true;
+        }
+        for (int i = 0; i < moveSelect2.Length; i++)
+        {
+            moveSelect2[i].SetActive(true);
+            moveSelectText2[i].enabled = false;
+            moveSelectIMG2[i].enabled = false;
+        }
+        moveDescription.SetActive(true);
+        moveSelectText1[0].text = "Basic Move";
+        moveSelectText1[1].text = "Special Move";
+        moveSelectText1[2].text = "Run";
+        moveSelectAnim1[0].SetBool("Selected", true);
+        StartCoroutine(SelectMoveWithArrowKeysVertical());
+        StartCoroutine(SelectMoveWithArrowKeysHorizontal());
+    }
+
+    //This coroutine is active when players can use their arrow keys to select a move... vertically.
+    public IEnumerator SelectMoveWithArrowKeysVertical()
+    {
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.UpArrow) | Input.GetKeyDown(KeyCode.DownArrow));
+        if (Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            SelectUpMove();
+            yield return new WaitForEndOfFrame();
+        }
+        if (Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            SelectDownMove();
+            yield return new WaitForEndOfFrame();
+        }
+        StartCoroutine(SelectMoveWithArrowKeysVertical());
+    }
+
+    //This coroutine is active when players can use their arrow keys and spacebar to assign tarot cards to each player. 
+    public IEnumerator SelectMoveWithArrowKeysHorizontal()
+    {
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) | Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow) | Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow));
+        if (Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            SelectRightMove();
+            yield return new WaitForEndOfFrame();
+        }
+        if (Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            SelectLeftMove();
+            yield return new WaitForEndOfFrame();
+        }
+        StartCoroutine(SelectMoveWithArrowKeysHorizontal());
+    }
+
+    //Selects the move button above the currently selected one, if possible
+    public void SelectUpMove()
+    {
+        if (selectedMoveButtonRow > 0)
+        {
+            selectedMoveButtonRow--;
+            SelectMoveButtonDependentOnColumn();
+        }
+    }
+
+    //Selects the move button below the currently selected one, if possible
+    public void SelectDownMove()
+    {
+        if (selectedMoveButtonColumn == 0 & selectedMoveButtonRow < 2)
+        {
+            selectedMoveButtonRow++;
+            SelectMoveButtonDependentOnColumn();
+        }
+        else if (selectedMoveButtonColumn == 1 & moveTypeSelected == 0 & selectedMoveButtonRow < 2)
+        {
+            selectedMoveButtonRow++;
+            SelectMoveButtonDependentOnColumn();
+        }
+        else if (selectedMoveButtonColumn == 1 & moveTypeSelected == 1 & selectedMoveButtonRow < 3)
+        {
+            selectedMoveButtonRow++;
+            SelectMoveButtonDependentOnColumn();
+        }
+    }
+
+    //Selects the move button to the left of the currently selected one, if possible
+    public void SelectLeftMove()
+    {
+        if (selectedMoveButtonColumn == 1)
+        {
+            selectedMoveButtonColumn--;
+            DeactivateMoveButton2();
+            ClearAllMoveAnimations();
+            selectedMoveButtonRow = 0;
+            moveSelectAnim1[0].SetBool("Selected", true);
+        }
+    }
+
+    //Selects the move button to the right of the currently selected one, if possible
+    public void SelectRightMove()
+    {
+        if (selectedMoveButtonColumn == 0)
+        {
+            selectedMoveButtonColumn++;
+            ActivateMoveButton2();
+            ClearAllMoveAnimations();
+            moveSelectAnim2[0].SetBool("Selected", true);
+            if (selectedMoveButtonRow == 0)
+            {
+                moveTypeSelected = 0;
+                moveSelectText2[0].text = "Basic Attack";
+                moveSelectText2[1].text = "Block";
+                moveSelectText2[2].text = "Use Item";
+                moveSelectText2[3].text = "";
+                moveSelectIMG2[3].enabled = false;
+            }
+            else if (selectedMoveButtonRow == 1 & player[playerTakingTurn].tarotCardType == 0)
+            {
+                moveTypeSelected = 1;
+                moveSelectText2[0].text = player[playerTakingTurn].playerData.Wand1;
+                moveSelectText2[1].text = player[playerTakingTurn].playerData.Wand2;
+                moveSelectText2[2].text = player[playerTakingTurn].playerData.Wand3;
+                moveSelectText2[3].text = player[playerTakingTurn].playerData.Wand4;
+                EnableMoveButton2ImagesAndText(4);
+            }
+            else if (selectedMoveButtonRow == 1 & player[playerTakingTurn].tarotCardType == 1)
+            {
+                moveTypeSelected = 1;
+                moveSelectText2[0].text = player[playerTakingTurn].playerData.Coin1;
+                moveSelectText2[1].text = player[playerTakingTurn].playerData.Coin2;
+                moveSelectText2[2].text = player[playerTakingTurn].playerData.Coin3;
+                moveSelectText2[3].text = player[playerTakingTurn].playerData.Coin4;
+                EnableMoveButton2ImagesAndText(4);
+            }
+            else if (selectedMoveButtonRow == 1 & player[playerTakingTurn].tarotCardType == 2)
+            {
+                moveTypeSelected = 1;
+                moveSelectText2[0].text = player[playerTakingTurn].playerData.Cup1;
+                moveSelectText2[1].text = player[playerTakingTurn].playerData.Cup2;
+                moveSelectText2[2].text = player[playerTakingTurn].playerData.Cup3;
+                moveSelectText2[3].text = player[playerTakingTurn].playerData.Cup4;
+                EnableMoveButton2ImagesAndText(4);
+            }
+            else if (selectedMoveButtonRow == 1 & player[playerTakingTurn].tarotCardType == 3)
+            {
+                moveTypeSelected = 1;
+                moveSelectText2[0].text = player[playerTakingTurn].playerData.Sword1;
+                moveSelectText2[1].text = player[playerTakingTurn].playerData.Sword2;
+                moveSelectText2[2].text = player[playerTakingTurn].playerData.Sword3;
+                moveSelectText2[3].text = player[playerTakingTurn].playerData.Sword4;
+                EnableMoveButton2ImagesAndText(4);
+            }
+            else if (selectedMoveButtonRow == 1 & player[playerTakingTurn].tarotCardType == 4)
+            {
+                moveTypeSelected = 1;
+                moveSelectText2[0].text = "Tarot Move"; //needs revision
+                moveSelectText2[1].text = player[playerTakingTurn].playerData.Ultimate1;
+                moveSelectText2[2].text = player[playerTakingTurn].playerData.Ultimate1;
+                moveSelectText2[3].text = player[playerTakingTurn].playerData.Ultimate1;
+                EnableMoveButton2ImagesAndText(4);
+            }
+            else if (selectedMoveButtonRow == 2)
+            {
+                moveTypeSelected = 2;
+                moveSelectText2[0].text = "Run";
+                for (int i = 1; i < 4; i++)
+                {
+                    moveSelectIMG2[i].enabled = false;
+                    moveSelectText2[i].enabled = false;
+                }
+            }
+            selectedMoveButtonRow = 0;
+        }
+    }
+
+    public void EnableMoveButton2ImagesAndText (int buttonsToEnable)
+    {
+        for (int i = 0; i < buttonsToEnable; i++)
+        {
+            moveSelectIMG2[i].enabled = true;
+            moveSelectText2[i].enabled = true;
+        }
+    }
+
+    //Selects the move button appropriate to the currently selected column
+    public void SelectMoveButtonDependentOnColumn ()
+    {
+        ClearAllMoveAnimations();
+        if (selectedMoveButtonColumn == 0)
+        {
+            moveSelectAnim1[selectedMoveButtonRow].SetBool("Selected", true);
+        }
+        else if (selectedMoveButtonColumn == 1)
+        {
+            moveSelectAnim2[selectedMoveButtonRow].SetBool("Selected", true);
+        }
+    }
+
+    //Clears all move button animations. 
+    public void ClearAllMoveAnimations()
+    {
+        foreach (Animator moveSelect in moveSelectAnim1)
+        {
+            if(moveSelect != null)
+            moveSelect.SetBool("Selected", false);
+        }
+        foreach (Animator moveSelect in moveSelectAnim2)
+        {
+            if (moveSelect != null)
+            moveSelect.SetBool("Selected", false);
+        }
+    }
+
+    //activates the text and images for the second column of move buttons
+    public void ActivateMoveButton2 ()
+    {
+        for (int i = 0; i < moveSelect2.Length; i++)
+        {
+            moveSelectText2[i].enabled = true;
+            moveSelectIMG2[i].enabled = true;
+        }
+    }
+
+    //Deactivates the text and images for the second column of move buttons
+    public void DeactivateMoveButton2()
+    {
+        for (int i = 0; i < moveSelect2.Length; i++)
+        {
+            moveSelectText2[i].enabled = false;
+            moveSelectIMG2[i].enabled = false;
+        }
     }
 }
