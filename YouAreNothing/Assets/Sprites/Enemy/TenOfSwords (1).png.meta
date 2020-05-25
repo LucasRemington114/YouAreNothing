@@ -1,0 +1,1937 @@
+fileFormatVersion: 2
+guid: d3edcb9993517074394ddbd8906c5d30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7613219158711824080
+    second: TenOfSwords (1)_0
+  - first:
+      213: 7847978723470755173
+    second: TenOfSwords (1)_1
+  - first:
+      213: 567242736335924310
+    second: TenOfSwords (1)_2
+  - first:
+      213: -1398231563060266123
+    second: TenOfSwords (1)_3
+  - first:
+      213: -7054803883347987607
+    second: TenOfSwords (1)_4
+  - first:
+      213: 750007887305606357
+    second: TenOfSwords (1)_5
+  - first:
+      213: -1853188413478006332
+    second: TenOfSwords (1)_6
+  - first:
+      213: -3221825676008791307
+    second: TenOfSwords (1)_7
+  - first:
+      213: 8588640299990024234
+    second: TenOfSwords (1)_8
+  - first:
+      213: 6817394361163447057
+    second: TenOfSwords (1)_9
+  - first:
+      213: 3065227460420116667
+    second: TenOfSwords (1)_10
+  - first:
+      213: 275687953707782872
+    second: TenOfSwords (1)_11
+  - first:
+      213: -8399022661665397855
+    second: TenOfSwords (1)_12
+  - first:
+      213: -6096855100722938507
+    second: TenOfSwords (1)_13
+  - first:
+      213: -8694070722654547283
+    second: TenOfSwords (1)_14
+  - first:
+      213: -6247023399153334448
+    second: TenOfSwords (1)_15
+  - first:
+      213: -8258642498920408442
+    second: TenOfSwords (1)_16
+  - first:
+      213: 1337722793707697393
+    second: TenOfSwords (1)_17
+  - first:
+      213: 625178875998471358
+    second: TenOfSwords (1)_18
+  - first:
+      213: 7571726162734789808
+    second: TenOfSwords (1)_19
+  - first:
+      213: -2459034560533012647
+    second: TenOfSwords (1)_20
+  - first:
+      213: -7635173951100786345
+    second: TenOfSwords (1)_21
+  - first:
+      213: 4783191776211174067
+    second: TenOfSwords (1)_22
+  - first:
+      213: 5059777864180792509
+    second: TenOfSwords (1)_23
+  - first:
+      213: 7261400369633391710
+    second: TenOfSwords (1)_24
+  - first:
+      213: 6015086244922392708
+    second: TenOfSwords (1)_25
+  - first:
+      213: 7357810870550732388
+    second: TenOfSwords (1)_26
+  - first:
+      213: -3822798745647427476
+    second: TenOfSwords (1)_27
+  - first:
+      213: -7630439657851321578
+    second: TenOfSwords (1)_28
+  - first:
+      213: 7911212927739947695
+    second: TenOfSwords (1)_29
+  - first:
+      213: -3715756576597318890
+    second: TenOfSwords (1)_30
+  - first:
+      213: 484975319822119578
+    second: TenOfSwords (1)_31
+  - first:
+      213: 5118475292637129277
+    second: TenOfSwords (1)_32
+  - first:
+      213: 977284268946664122
+    second: TenOfSwords (1)_33
+  - first:
+      213: 5608024164158083204
+    second: TenOfSwords (1)_34
+  - first:
+      213: 4092825703011253067
+    second: TenOfSwords (1)_35
+  - first:
+      213: 6339923557307127508
+    second: TenOfSwords (1)_36
+  - first:
+      213: 5134169451668582406
+    second: TenOfSwords (1)_37
+  - first:
+      213: -6172858499055343698
+    second: TenOfSwords (1)_38
+  - first:
+      213: -4266125591466561239
+    second: TenOfSwords (1)_39
+  - first:
+      213: -8305949044484948845
+    second: TenOfSwords (1)_40
+  - first:
+      213: -1262968637144656591
+    second: TenOfSwords (1)_41
+  - first:
+      213: 2641185427959095905
+    second: TenOfSwords (1)_42
+  - first:
+      213: 134004569935598776
+    second: TenOfSwords (1)_43
+  - first:
+      213: 3542975176605702265
+    second: TenOfSwords (1)_44
+  - first:
+      213: -2668830767407862292
+    second: TenOfSwords (1)_45
+  - first:
+      213: 3803510248657614484
+    second: TenOfSwords (1)_46
+  - first:
+      213: -2589737239355461133
+    second: TenOfSwords (1)_47
+  - first:
+      213: 5874357254860931269
+    second: TenOfSwords (1)_48
+  - first:
+      213: 5342212114783543766
+    second: TenOfSwords (1)_49
+  - first:
+      213: 5278324108048087468
+    second: TenOfSwords (1)_50
+  - first:
+      213: -3681836912066475412
+    second: TenOfSwords (1)_51
+  - first:
+      213: 1279442903975881447
+    second: TenOfSwords (1)_52
+  - first:
+      213: -4294849442060087040
+    second: TenOfSwords (1)_53
+  - first:
+      213: -1719907449306728881
+    second: TenOfSwords (1)_54
+  - first:
+      213: -871829466606183586
+    second: TenOfSwords (1)_55
+  - first:
+      213: 5783831499573566591
+    second: TenOfSwords (1)_56
+  - first:
+      213: 345612679721899925
+    second: TenOfSwords (1)_57
+  - first:
+      213: 6672795976499166218
+    second: TenOfSwords (1)_58
+  - first:
+      213: 1194259628986007101
+    second: TenOfSwords (1)_59
+  - first:
+      213: -2608140587590791715
+    second: TenOfSwords (1)_60
+  - first:
+      213: -8767759269874793636
+    second: TenOfSwords (1)_61
+  - first:
+      213: -2174639977406956764
+    second: TenOfSwords (1)_62
+  - first:
+      213: -2184620745205496567
+    second: TenOfSwords (1)_63
+  - first:
+      213: 3817899720637964924
+    second: TenOfSwords (1)_64
+  - first:
+      213: -2770898760230282895
+    second: TenOfSwords (1)_65
+  - first:
+      213: 7183347156467221844
+    second: TenOfSwords (1)_66
+  - first:
+      213: 7503603153529621876
+    second: TenOfSwords (1)_67
+  - first:
+      213: -8115948756102332656
+    second: TenOfSwords (1)_68
+  - first:
+      213: -5598242085425904516
+    second: TenOfSwords (1)_69
+  - first:
+      213: -868879907145738496
+    second: TenOfSwords (1)_70
+  - first:
+      213: 7163133029456441140
+    second: TenOfSwords (1)_71
+  - first:
+      213: -1480941792774003154
+    second: TenOfSwords (1)_72
+  - first:
+      213: 5020026810097284148
+    second: TenOfSwords (1)_73
+  - first:
+      213: -6482861644680393188
+    second: TenOfSwords (1)_74
+  - first:
+      213: 411748010739505237
+    second: TenOfSwords (1)_0
+  - first:
+      213: -4003481226147935071
+    second: TenOfSwords (1)_1
+  - first:
+      213: 1556206832531839722
+    second: TenOfSwords (1)_2
+  - first:
+      213: 7081093944494982078
+    second: TenOfSwords (1)_3
+  - first:
+      213: -3264293384834251899
+    second: TenOfSwords (1)_4
+  - first:
+      213: 1206886380395131627
+    second: TenOfSwords (1)_5
+  - first:
+      213: -4488829767857536330
+    second: TenOfSwords (1)_6
+  - first:
+      213: 843265838528122495
+    second: TenOfSwords (1)_7
+  - first:
+      213: 4902721607930850058
+    second: TenOfSwords (1)_8
+  - first:
+      213: 108619317904834100
+    second: TenOfSwords (1)_9
+  - first:
+      213: 732018941145688738
+    second: TenOfSwords (1)_10
+  - first:
+      213: -3008675394566332299
+    second: TenOfSwords (1)_11
+  - first:
+      213: -4101817568708221959
+    second: TenOfSwords (1)_12
+  - first:
+      213: 5484781857983015780
+    second: TenOfSwords (1)_13
+  - first:
+      213: 487201440312754924
+    second: TenOfSwords (1)_14
+  - first:
+      213: 5769224021017157531
+    second: TenOfSwords (1)_15
+  - first:
+      213: 1568510072162330856
+    second: TenOfSwords (1)_16
+  - first:
+      213: -4612450861122646466
+    second: TenOfSwords (1)_17
+  - first:
+      213: -2735660842299087823
+    second: TenOfSwords (1)_18
+  - first:
+      213: -5118412139004537910
+    second: TenOfSwords (1)_19
+  - first:
+      213: 1082737601706409059
+    second: TenOfSwords (1)_20
+  - first:
+      213: -5726298196324372250
+    second: TenOfSwords (1)_21
+  - first:
+      213: 4840209276082330095
+    second: TenOfSwords (1)_22
+  - first:
+      213: 8165554827205255421
+    second: TenOfSwords (1)_23
+  - first:
+      213: 7537709607251736626
+    second: TenOfSwords (1)_24
+  - first:
+      213: 4894575402245638832
+    second: TenOfSwords (1)_25
+  - first:
+      213: 8610460002771072765
+    second: TenOfSwords (1)_26
+  - first:
+      213: -1937994921985403679
+    second: TenOfSwords (1)_27
+  - first:
+      213: 8419605615063518982
+    second: TenOfSwords (1)_28
+  - first:
+      213: -4620807342897043496
+    second: TenOfSwords (1)_29
+  - first:
+      213: 5854017675335213434
+    second: TenOfSwords (1)_30
+  - first:
+      213: -5958657223541717245
+    second: TenOfSwords (1)_31
+  - first:
+      213: 5393765651280746114
+    second: TenOfSwords (1)_32
+  - first:
+      213: 2332649083952365167
+    second: TenOfSwords (1)_33
+  - first:
+      213: 3086527566171445977
+    second: TenOfSwords (1)_34
+  - first:
+      213: -4682015547952946075
+    second: TenOfSwords (1)_35
+  - first:
+      213: 7115075391313249214
+    second: TenOfSwords (1)_36
+  - first:
+      213: 2664963201620156941
+    second: TenOfSwords (1)_37
+  - first:
+      213: 3719879289508467534
+    second: TenOfSwords (1)_38
+  - first:
+      213: -7247321560722348161
+    second: TenOfSwords (1)_39
+  - first:
+      213: -7291466673619907626
+    second: TenOfSwords (1)_40
+  - first:
+      213: -7686242945162117959
+    second: TenOfSwords (1)_41
+  - first:
+      213: -118471628779299580
+    second: TenOfSwords (1)_42
+  - first:
+      213: -4369285607763534652
+    second: TenOfSwords (1)_43
+  - first:
+      213: 2714344934145210673
+    second: TenOfSwords (1)_44
+  - first:
+      213: 6196472377101444657
+    second: TenOfSwords (1)_45
+  - first:
+      213: 2131582223271548247
+    second: TenOfSwords (1)_46
+  - first:
+      213: 6398362060482408239
+    second: TenOfSwords (1)_47
+  - first:
+      213: 3829279132020495286
+    second: TenOfSwords (1)_48
+  - first:
+      213: 499583146428543750
+    second: TenOfSwords (1)_49
+  - first:
+      213: 2473159734949481061
+    second: TenOfSwords (1)_50
+  - first:
+      213: -3212987119474918663
+    second: TenOfSwords (1)_51
+  - first:
+      213: -7557137769971925908
+    second: TenOfSwords (1)_52
+  - first:
+      213: -1137046773743415601
+    second: TenOfSwords (1)_53
+  - first:
+      213: -7980465469881507122
+    second: TenOfSwords (1)_54
+  - first:
+      213: -8394056909482887597
+    second: TenOfSwords (1)_55
+  - first:
+      213: 8551195243242683308
+    second: TenOfSwords (1)_56
+  - first:
+      213: 6702003424298125064
+    second: TenOfSwords (1)_57
+  - first:
+      213: -99755956247765565
+    second: TenOfSwords (1)_58
+  - first:
+      213: 2610202476736336425
+    second: TenOfSwords (1)_59
+  - first:
+      213: -2695093397499239360
+    second: TenOfSwords (1)_60
+  - first:
+      213: 2113351865736657641
+    second: TenOfSwords (1)_61
+  - first:
+      213: 6710909441145537455
+    second: TenOfSwords (1)_62
+  - first:
+      213: -2627330568246736125
+    second: TenOfSwords (1)_63
+  - first:
+      213: 47384149286174510
+    second: TenOfSwords (1)_64
+  - first:
+      213: 9007779542357840485
+    second: TenOfSwords (1)_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TenOfSwords (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5581a1d52a2d6b500800000000000000
+      internalID: 411748010739505237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acc1824907c078c0800000000000000
+      internalID: -4003481226147935071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea981a7ed1c89510800000000000000
+      internalID: 1556206832531839722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb30bcedc69154260800000000000000
+      internalID: 7081093944494982078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5830c422676e2b2d0800000000000000
+      internalID: -3264293384834251899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be275b3c4c8bfb010800000000000000
+      internalID: 1206886380395131627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b207a5eb1974b1c0800000000000000
+      internalID: -4488829767857536330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ec0b4ffc1e3bb00800000000000000
+      internalID: 843265838528122495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ba951a357f90440800000000000000
+      internalID: 4902721607930850058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e7673b1b4e18100800000000000000
+      internalID: 108619317904834100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaa8db3957a82a00800000000000000
+      internalID: 732018941145688738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5706a665ba90f36d0800000000000000
+      internalID: -3008675394566332299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3a0b357aa6317c0800000000000000
+      internalID: -4101817568708221959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ba59b4a0cdd1c40800000000000000
+      internalID: 5484781857983015780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce286efe023e2c600800000000000000
+      internalID: 487201440312754924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd0623ea6601050800000000000000
+      internalID: 5769224021017157531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8abdda99774c510800000000000000
+      internalID: 1568510072162330856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e07de21684dffb0800000000000000
+      internalID: -4612450861122646466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13421d445faf80ad0800000000000000
+      internalID: -2735660842299087823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac35690374fb7f8b0800000000000000
+      internalID: -5118412139004537910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c3ba6bc18a60f00800000000000000
+      internalID: 1082737601706409059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e03022312a1880b0800000000000000
+      internalID: -5726298196324372250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9107b21b0eb2340800000000000000
+      internalID: 4840209276082330095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0ab853ad0e15170800000000000000
+      internalID: 8165554827205255421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238f94883f25b9860800000000000000
+      internalID: 7537709607251736626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba473155660de340800000000000000
+      internalID: 4894575402245638832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6f0e990cf7e7770800000000000000
+      internalID: 8610460002771072765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e49c8ae2ebda15e0800000000000000
+      internalID: -1937994921985403679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fcebaa2b278d470800000000000000
+      internalID: 8419605615063518982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7ea1724389fdfb0800000000000000
+      internalID: -4620807342897043496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71a63f4f06ad3150800000000000000
+      internalID: 5854017675335213434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3070b7453d89e4da0800000000000000
+      internalID: -5958657223541717245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286da4e48418ada40800000000000000
+      internalID: 5393765651280746114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6efe92abfb3f5020800000000000000
+      internalID: 2332649083952365167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da9913e77c85da20800000000000000
+      internalID: 3086527566171445977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564a86f5aa3260fb0800000000000000
+      internalID: -4682015547952946075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb389510f53ddb260800000000000000
+      internalID: 7115075391313249214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02ae0c89e9dbf420800000000000000
+      internalID: 2664963201620156941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e431c7a418aaf9330800000000000000
+      internalID: 3719879289508467534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f776d1040775c6b90800000000000000
+      internalID: -7247321560722348161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db494331b18fca90800000000000000
+      internalID: -7291466673619907626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc724cc3caf45590800000000000000
+      internalID: -7686242945162117959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd5aa6eaa1b5ef0800000000000000
+      internalID: -118471628779299580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc1703a3ed2d53c0800000000000000
+      internalID: -4369285607763534652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1393b9d165a4ba520800000000000000
+      internalID: 2714344934145210673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136e6a1fbca4ef550800000000000000
+      internalID: 6196472377101444657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75553ab0db6e49d10800000000000000
+      internalID: 2131582223271548247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fe36fd46c8bc850800000000000000
+      internalID: 6398362060482408239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3d5e90515542530800000000000000
+      internalID: 3829279132020495286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60335aa8930eee600800000000000000
+      internalID: 499583146428543750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a8672fcad625220800000000000000
+      internalID: 2473159734949481061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_51
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fabacbec3d2963d0800000000000000
+      internalID: -3212987119474918663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cb226dc37af1790800000000000000
+      internalID: -7557137769971925908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce050ecbf56830f0800000000000000
+      internalID: -1137046773743415601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2217dffe0bf3190800000000000000
+      internalID: -7980465469881507122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356fbd5e6b1528b80800000000000000
+      internalID: -8394056909482887597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab7d7e74c2fba670800000000000000
+      internalID: 8551195243242683308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_57
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807cdbc0b9c420d50800000000000000
+      internalID: 6702003424298125064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_58
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd5f9f7c789d9ef0800000000000000
+      internalID: -99755956247765565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922d6b9b25d493420800000000000000
+      internalID: 2610202476736336425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044ae8d85da199ad0800000000000000
+      internalID: -2695093397499239360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea74aa2352245d10800000000000000
+      internalID: 2113351865736657641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa38b4fa490f12d50800000000000000
+      internalID: 6710909441145537455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bc024b4c8d98bd0800000000000000
+      internalID: -2627330568246736125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_64
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fbf2af1a758a000800000000000000
+      internalID: 47384149286174510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TenOfSwords (1)_65
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562154db4cf020d70800000000000000
+      internalID: 9007779542357840485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3206db8a609d00043817affd3e3ae7a1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

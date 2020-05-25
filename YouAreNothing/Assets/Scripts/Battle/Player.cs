@@ -71,7 +71,6 @@ public class Player : MonoBehaviour
         gameObject.transform.localPosition = new Vector3(-230, -72, 0);
     }
 
-
     //Determines the type of tarot card. 
     public int DetermineTarotCardType ()
     {
@@ -96,4 +95,12 @@ public class Player : MonoBehaviour
             return 4;
         }
     }
+
+    public void DamagePlayer (int damageDealt)
+    {
+        Debug.Log("DamageDealt");
+        playerAnim.SetTrigger("Damaged");
+        currentHealth = currentHealth - damageDealt;
+    }
+
 }

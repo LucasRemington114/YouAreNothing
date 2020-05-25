@@ -7,6 +7,9 @@ public class BattleManager : MonoBehaviour
 {
     //UI elements
     public Text[] testEnemyText;
+    public Image whiteScreen;
+    public Image[] playerTargetSprite;
+    public Animator[] playerTargetAnim;
     //public GameObject[] playerUIHolder = new GameObject[4];
 
     //Tarot UI elements
@@ -78,7 +81,36 @@ public class BattleManager : MonoBehaviour
         playerDoneButtonIMG = playerDoneButton.GetComponentInChildren<Image>();
         playerDoneButtonAnim = playerDoneButton.GetComponentInChildren<Animator>();
         playerDoneButtonText = playerDoneButton.GetComponentInChildren<Text>();
+        TogglePlayerBackgroundImages();
         RollInitiative();
+        StartCoroutine(EasyTestingInputs());
+    }
+
+    //Pressing space on a selected tarot card makes it moveable. 
+    public IEnumerator EasyTestingInputs()
+    {
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Y));
+        if (Input.GetKeyDown(KeyCode.Y) == true)
+        {
+            playerDoneButtonAnim.SetTrigger("Vanish");
+            TogglePlayerBackgroundImages();
+            for (int i = 0; i < player.Length; i++)
+            {
+                playerTarotAnim[i].SetTrigger("Vanish");
+                player[i].playerTarotCard = playerTarotText[i].text;
+                player[i].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[i].playerTarotCard)];
+                player[i].initiativeIMG.enabled = true;
+                player[i].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[i].playerTarotCard);
+                player[i].initiativeNumber = dt.ReturnIdentityIntOfTarotCardByString(player[i].playerTarotCard);
+            }
+            for (int i = 0; i < enemy.Length; i++)
+            {
+                enemy[0].initiativeNumber = 78;
+            }
+            initativePhaseOver = true;
+            currentTurn = 79;
+            DetermineTurn();
+        }
     }
 
     //Called at the beginning of each turn.
@@ -122,9 +154,13 @@ public class BattleManager : MonoBehaviour
             playerTarotIcon[i].sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(playerTarotText[i].text)];
         }
 
-        for (int i = 0; i < testEnemyText.Length; i++)
+        for (int i = 0; i < enemy.Length; i++)
         {
-            testEnemyText[i].text = dt.DrawTarotCardAndReturnString();
+            enemy[i].enemyTarotCard = dt.DrawTarotCardAndReturnString();
+            enemy[i].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(enemy[i].enemyTarotCard)];
+            enemy[i].initiativeIMG.enabled = true;
+            enemy[i].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(enemy[i].enemyTarotCard);
+            enemy[i].initiativeText.enabled = true;
         }
         PlayerSelectInitiative();
     }
@@ -289,19 +325,42 @@ public class BattleManager : MonoBehaviour
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) & doneButtonSelected == true);
 
         playerDoneButtonAnim.SetTrigger("Vanish");
+        TogglePlayerBackgroundImages();
         for (int i = 0; i < player.Length; i++)
         {
             playerTarotAnim[i].SetTrigger("Vanish");
-            playerBackgroundImageAnim[i].SetTrigger("Vanish");
             player[i].playerTarotCard = playerTarotText[i].text;
             player[i].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[i].playerTarotCard)];
             player[i].initiativeIMG.enabled = true;
             player[i].initiativeText.text = dt.ReturnTextStringOfTarotCardByString(player[i].playerTarotCard);
             player[i].initiativeNumber = dt.ReturnIdentityIntOfTarotCardByString(player[i].playerTarotCard);
         }
+        for (int i = 0; i < enemy.Length; i++)
+        {
+            enemy[i].initiativeNumber = dt.ReturnIdentityIntOfTarotCardByString(enemy[i].enemyTarotCard);
+        }
         initativePhaseOver = true;
-        currentTurn = 78;
+        currentTurn = 79;
         DetermineTurn();
+    }
+
+    //Toggles all Player Background Images on or off.
+    public void TogglePlayerBackgroundImages ()
+    {
+        if (playerBackgroundImageAnim[0].GetBool("Active") == true)
+        {
+            for (int i = 0; i < player.Length; i++)
+            {
+                playerBackgroundImageAnim[i].SetBool("Active", false);
+            }
+        } else
+        {
+            for (int i = 0; i < player.Length; i++)
+            {
+                playerBackgroundImageAnim[i].SetBool("Active", true);
+                playerBackgroundImage[i].enabled = true;
+            }
+        }
     }
 
     //This probably isn't a great way to do this BUT basically, every living enemy and player has a turn number under 78. 
@@ -317,7 +376,13 @@ public class BattleManager : MonoBehaviour
                 player[i].isTurn = true;
             }
         }
-
+        for (int i = 0; i < enemy.Length; i++)
+        {
+            if (currentTurn == enemy[i].initiativeNumber)
+            {
+                enemy[i].isTurn = true;
+            }
+        }
         if (player[0].isTurn == true)
         {
             StartCoroutine(TakePlayerTurn(0));
@@ -334,6 +399,45 @@ public class BattleManager : MonoBehaviour
         {
             StartCoroutine(TakePlayerTurn(3));
         }
+        else if (enemy[0].isTurn == true)
+        {
+            StartCoroutine(enemy[0].TakeEnemyTurn());
+        }
+        else if (enemy.Length == 2)
+        {
+            if (enemy[1].isTurn == true)
+            {
+                StartCoroutine(enemy[1].TakeEnemyTurn());
+            }
+        }
+        else if (enemy.Length == 3)
+        {
+            if (enemy[2].isTurn == true)
+            {
+                StartCoroutine(enemy[2].TakeEnemyTurn());
+            }
+        }
+        else if (enemy.Length == 4)
+        {
+            if (enemy[3].isTurn == true)
+            {
+                StartCoroutine(enemy[3].TakeEnemyTurn());
+            }
+        }
+        else if (enemy.Length == 5)
+        {
+            if (enemy[4].isTurn == true)
+            {
+                StartCoroutine(enemy[4].TakeEnemyTurn());
+            }
+        }
+        else if (enemy.Length == 6)
+        {
+            if (enemy[5].isTurn == true)
+            {
+                StartCoroutine(enemy[5].TakeEnemyTurn());
+            }
+        }
         else
         {
             DetermineTurn();
@@ -345,9 +449,9 @@ public class BattleManager : MonoBehaviour
     {
         Debug.Log(currentTurn + " Player turn " + playerNumber);
         playerTakingTurn = playerNumber;
-        yield return new WaitUntil(() => playerBackgroundImage[playerTakingTurn].enabled == false);
+        yield return new WaitUntil(() => playerBackgroundImage[playerTakingTurn].color.a == 0);
         player[playerTakingTurn].BeginTurn();
-        playerBackgroundImageAnim[playerTakingTurn].SetTrigger("Vanish");
+        playerBackgroundImageAnim[playerTakingTurn].SetBool("Active", true);
         playerBackgroundImage[playerTakingTurn].enabled = true;
         player[playerTakingTurn].initiativeIMG.sprite = dt.tarotCardImages[dt.ReturnImageIntOfTarotCardByString(player[playerTakingTurn].playerTarotCard)];
         player[playerTakingTurn].initiativeIMG.enabled = true;
@@ -583,4 +687,7 @@ public class BattleManager : MonoBehaviour
             moveSelectIMG2[i].enabled = false;
         }
     }
+
+
+
 }
