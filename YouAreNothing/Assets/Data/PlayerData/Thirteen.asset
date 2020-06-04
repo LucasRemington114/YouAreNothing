@@ -19,3 +19,22 @@ MonoBehaviour:
   startingHealth: 100
   resourceType: 2
   startingResource: 0
+  Wand1: TestMove
+  Wand2: TestMove
+  Wand3: TestMove
+  Wand4: TestMove
+  Coin1: TestMove
+  Coin2: TestMove
+  Coin3: TestMove
+  Coin4: TestMove
+  Cup1: TestMove
+  Cup2: TestMove
+  Cup3: TestMove
+  Cup4: TestMove
+  Sword1: TestMove
+  Sword2: TestMove
+  Sword3: TestMove
+  Sword4: TestMove
+  Ultimate1: TestMove
+  Ultimate2: TestMove
+  Ultimate3: TestMove

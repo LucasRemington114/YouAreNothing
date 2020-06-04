@@ -435,7 +435,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a17d2099e7f5a34ab004b906d22779c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battlePosition: {x: 0, y: 0, z: 0}
+  selectArrow: {fileID: 4203040195399799996, guid: 03d49e975d2b5f64e9118f813f24c057,
+    type: 3}
   playerData: {fileID: 11400000, guid: 25ab124cc242b504bb12aaad05d26446, type: 2}
+  bm: {fileID: 0}
   initiativeNumber: 0
   isTurn: 0
   turnOver: 0
@@ -465,6 +469,7 @@ MonoBehaviour:
   playerResource: 0
   currentResource: 0
   maxResource: 0
+  targetEnemy: 
   playerTarotCard: 
   tarotCardType: 0
 --- !u!1 &70849938
@@ -2372,7 +2377,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a17d2099e7f5a34ab004b906d22779c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battlePosition: {x: 0, y: 0, z: 0}
+  selectArrow: {fileID: 4203040195399799996, guid: 03d49e975d2b5f64e9118f813f24c057,
+    type: 3}
   playerData: {fileID: 11400000, guid: e12628a80ed1ccf4d9fc412600e7e711, type: 2}
+  bm: {fileID: 0}
   initiativeNumber: 0
   isTurn: 0
   turnOver: 0
@@ -2402,6 +2411,7 @@ MonoBehaviour:
   playerResource: 0
   currentResource: 0
   maxResource: 0
+  targetEnemy: 
   playerTarotCard: 
   tarotCardType: 0
 --- !u!1 &377838790
@@ -3397,6 +3407,7 @@ RectTransform:
   - {fileID: 2013289022}
   - {fileID: 6080863}
   - {fileID: 1539371568}
+  - {fileID: 1464005591}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9806,6 +9817,7 @@ MonoBehaviour:
   selectedMoveButtonColumn: 0
   moveTypeSelected: 0
   initativePhaseOver: 0
+  playerSelectingTarget: 0
   currentTurn: 0
   playerTakingTurn: 0
   activeUI: 0
@@ -10115,7 +10127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a17d2099e7f5a34ab004b906d22779c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battlePosition: {x: 0, y: 0, z: 0}
+  selectArrow: {fileID: 4203040195399799996, guid: 03d49e975d2b5f64e9118f813f24c057,
+    type: 3}
   playerData: {fileID: 11400000, guid: ff8ae31108eea324487d676e14901f44, type: 2}
+  bm: {fileID: 0}
   initiativeNumber: 0
   isTurn: 0
   turnOver: 0
@@ -10145,8 +10161,44 @@ MonoBehaviour:
   playerResource: 0
   currentResource: 0
   maxResource: 0
+  targetEnemy: 
   playerTarotCard: 
   tarotCardType: 0
+--- !u!1 &1464005590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464005591}
+  m_Layer: 5
+  m_Name: ArrowHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1464005591
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464005590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 472921449}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1469035014
 GameObject:
   m_ObjectHideFlags: 0
@@ -12179,7 +12231,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a17d2099e7f5a34ab004b906d22779c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battlePosition: {x: 0, y: 0, z: 0}
+  selectArrow: {fileID: 4203040195399799996, guid: 03d49e975d2b5f64e9118f813f24c057,
+    type: 3}
   playerData: {fileID: 11400000, guid: bb506b0baac058546b5f355a7062dc00, type: 2}
+  bm: {fileID: 0}
   initiativeNumber: 0
   isTurn: 0
   turnOver: 0
@@ -12209,6 +12265,7 @@ MonoBehaviour:
   playerResource: 0
   currentResource: 0
   maxResource: 0
+  targetEnemy: 
   playerTarotCard: 
   tarotCardType: 0
 --- !u!1 &1838759568
@@ -12542,6 +12599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d41e3a74425064b9fa2b30764b4143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0, z: 0}
   battlePosition:
   - {x: 38, y: 50, z: 0}
   enemyData: {fileID: 11400000, guid: 5a487a35bf8903845a41db6ac7e4cfc8, type: 2}

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    private Vector3 originalPosition;
+    public Vector3 originalPosition;
     public Vector3[] battlePosition;
     private Animator targetAnimation;
 

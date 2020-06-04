@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Battle\Enemy.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyAnimationFunctions.cs" />
     <Compile Include="Assets\Scripts\Battle\Player.cs" />
+    <Compile Include="Assets\Scripts\Battle\SelectArrow.cs" />
     <Compile Include="Assets\Scripts\DisappearWhenPrompted.cs" />
     <Compile Include="Assets\Scripts\GenericAnimationEvent.cs" />
     <Compile Include="Assets\Scripts\NoImageWhenNone.cs" />

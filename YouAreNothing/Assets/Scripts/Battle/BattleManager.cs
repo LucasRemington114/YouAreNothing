@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,6 +49,7 @@ public class BattleManager : MonoBehaviour
 
     //Bools
     public bool initativePhaseOver;
+    public bool playerSelectingTarget;
 
     //Ints
     public int currentTurn; //The current turn number. 
@@ -468,46 +470,63 @@ public class BattleManager : MonoBehaviour
             moveSelectIMG2[i].enabled = false;
         }
         moveDescription.SetActive(true);
+        selectedMoveButtonColumn = 0;
+        selectedMoveButtonRow= 0;
         moveSelectText1[0].text = "Basic Move";
         moveSelectText1[1].text = "Special Move";
         moveSelectText1[2].text = "Run";
         moveSelectAnim1[0].SetBool("Selected", true);
         StartCoroutine(SelectMoveWithArrowKeysVertical());
         StartCoroutine(SelectMoveWithArrowKeysHorizontal());
+        StartCoroutine(SelectMoveWithSpacebar());
     }
 
     //This coroutine is active when players can use their arrow keys to select a move... vertically.
     public IEnumerator SelectMoveWithArrowKeysVertical()
     {
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.UpArrow) | Input.GetKeyDown(KeyCode.DownArrow));
-        if (Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.UpArrow))
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.UpArrow) | Input.GetKeyDown(KeyCode.DownArrow) | playerSelectingTarget == true);
+        if (playerSelectingTarget == true)
         {
-            SelectUpMove();
             yield return new WaitForEndOfFrame();
         }
-        if (Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.DownArrow))
+        else
         {
-            SelectDownMove();
-            yield return new WaitForEndOfFrame();
+            if (Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                SelectUpMove();
+                yield return new WaitForEndOfFrame();
+            }
+            if (Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                SelectDownMove();
+                yield return new WaitForEndOfFrame();
+            }
+            StartCoroutine(SelectMoveWithArrowKeysVertical());
         }
-        StartCoroutine(SelectMoveWithArrowKeysVertical());
     }
 
     //This coroutine is active when players can use their arrow keys and spacebar to assign tarot cards to each player. 
     public IEnumerator SelectMoveWithArrowKeysHorizontal()
     {
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) | Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow) | Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow));
-        if (Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow))
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow) | Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow) | playerSelectingTarget == true);
+        if (playerSelectingTarget == true)
         {
-            SelectRightMove();
             yield return new WaitForEndOfFrame();
         }
-        if (Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow))
+        else
         {
-            SelectLeftMove();
-            yield return new WaitForEndOfFrame();
+            if (Input.GetKeyDown(KeyCode.D) | Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                SelectRightMove();
+                yield return new WaitForEndOfFrame();
+            }
+            if (Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SelectLeftMove();
+                yield return new WaitForEndOfFrame();
+            }
+            StartCoroutine(SelectMoveWithArrowKeysHorizontal());
         }
-        StartCoroutine(SelectMoveWithArrowKeysHorizontal());
     }
 
     //Selects the move button above the currently selected one, if possible
@@ -548,8 +567,8 @@ public class BattleManager : MonoBehaviour
             selectedMoveButtonColumn--;
             DeactivateMoveButton2();
             ClearAllMoveAnimations();
-            selectedMoveButtonRow = 0;
-            moveSelectAnim1[0].SetBool("Selected", true);
+            //selectedMoveButtonRow = 0;
+            moveSelectAnim1[selectedMoveButtonRow].SetBool("Selected", true);
         }
     }
 
@@ -688,6 +707,25 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-
+    //Allows the player to call a move by pressing space.
+    public IEnumerator SelectMoveWithSpacebar()
+    {
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        if (selectedMoveButtonColumn == 0)
+        {
+            Debug.Log("shift column");
+            SelectRightMove();
+        }
+        else if (selectedMoveButtonColumn == 1)
+        {
+            string abilityName;
+            abilityName = moveSelectText2[selectedMoveButtonRow].text;
+            abilityName = Regex.Replace(abilityName, " ", "");
+            Debug.Log("invoking " + abilityName);
+            player[playerTakingTurn].Invoke(abilityName, 0f);
+        }
+        yield return new WaitForEndOfFrame();
+        StartCoroutine(SelectMoveWithSpacebar());
+    }
 
 }

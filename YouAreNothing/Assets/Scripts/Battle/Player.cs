@@ -6,8 +6,13 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     private Vector3 originalPosition;
+    public Vector3 battlePosition;
+    public GameObject selectArrow;
 
     public SerializeablePlayerData playerData; //The scriptable object containing the necessary player data. 
+
+    //Other scripts
+    public BattleManager bm;
 
     //Data related to turns and initiative
     public int initiativeNumber; //From 0 to 77: the higher the number, the sooner the player takes their turn. 
@@ -31,11 +36,14 @@ public class Player : MonoBehaviour
     public int currentResource;
     public int maxResource;
 
+    public List<int> targetEnemy; //which enemy is currently the target of the attack
+
     public string playerTarotCard; //Which tarot card the player has: determines what abilities they have available. 
     public int tarotCardType; //0 = Wand, 1 = Coin, 2 = Cup, 3 = Sword, 4 = Major Arcana
 
     void Awake()
     {
+        bm = GameObject.Find("/ManagerHolder/BattleManager").GetComponent<BattleManager>();
         playerSprite.sprite = playerData.playerSprite;
         nameText.text = playerData.playerName;
         playerHealth = playerData.startingHealth;
@@ -101,6 +109,36 @@ public class Player : MonoBehaviour
         Debug.Log("DamageDealt");
         playerAnim.SetTrigger("Damaged");
         currentHealth = currentHealth - damageDealt;
+    }
+
+    //Sets the enemy sprite to the predetermined battle position, and sets the existing spaces for players to have the correct image and animations for the targeted players. 
+    public void SetEnemyAttackBattlePositions(int numberOfTargets)
+    {
+        for (int i = 0; i < bm.enemy.Length; i++)
+        {
+            bm.enemy[i].enemySprite.enabled = false;
+        }
+        bm.playerTargetSprite[bm.playerTakingTurn].enabled = true;
+        bm.playerTargetSprite[bm.playerTakingTurn].transform.localPosition = battlePosition;
+        for (int i = 0; i < numberOfTargets; i++)
+        {
+            bm.enemy[targetEnemy[i]].enabled = true;
+            //targetAnimation = bm.playerTargetSprite[i].GetComponent<Animator>();
+            //targetAnimation.runtimeAnimatorController = bm.player[targetPlayer[i]].playerAnim.runtimeAnimatorController;
+        }
+    }
+
+    public void PlayerSelectTarget ()
+    {
+        bm.playerSelectingTarget = true;
+        Instantiate(selectArrow, new Vector3 (0,0,0), Quaternion.identity);
+    }
+
+    //This is a test move that most moves trigger. If this ever gets called past testing, it is uh-oh time.
+    public void TestMove()
+    {
+        Debug.Log("TestMove");
+        PlayerSelectTarget();
     }
 
 }
